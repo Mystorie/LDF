@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEMX - Dossier d'Investissement</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-logo">CINEMX</h2>
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="#accueil" class="nav-link active" data-section="accueil">Accueil</a></li>
+            <li><a href="#synthese" class="nav-link" data-section="synthese">Synthèse exécutive</a></li>
+            <li><a href="#marche" class="nav-link" data-section="marche">Marché & opportunité</a></li>
+            <li><a href="#proposition" class="nav-link" data-section="proposition">Proposition de valeur</a></li>
+            <li><a href="#modele" class="nav-link" data-section="modele">Modèle économique</a></li>
+            <li><a href="#projections" class="nav-link" data-section="projections">Projections financières</a></li>
+            <li><a href="#equipe" class="nav-link" data-section="equipe">Équipe</a></li>
+            <li><a href="#financement" class="nav-link" data-section="financement">Financement</a></li>
+            <li><a href="#sortie" class="nav-link" data-section="sortie">Stratégie de sortie</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Section Accueil -->
+        <section id="accueil" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">CINEMX</h1>
+                    <p class="hero-subtitle">Production vidéo nouvelle génération pour gaming & corporate</p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3>160k€</h3>
+                            <p>CA 2024</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>750k€</h3>
+                            <p>Objectif 2027</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>455k€</h3>
+                            <p>Financement demandé</p>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary btn--lg" onclick="scrollToSection('synthese')">
+                        Découvrir le projet
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Synthèse Exécutive -->
+        <section id="synthese" class="section">
+            <div class="container">
+                <h2>Synthèse Exécutive</h2>
+                <div class="executive-summary">
+                    <div class="summary-card">
+                        <h3>À propos de CINEMX</h3>
+                        <p>CINEMX est un GIE (Groupement d'Intérêt Économique) fondé en 2024, spécialisé dans la production vidéo pour studios de jeux vidéo et communication corporate.</p>
+                        <p>Notre approche unique combine production vidéo professionnelle et solutions nocode pour offrir des services intégrés à nos clients.</p>
+                    </div>
+                    <div class="summary-metrics">
+                        <h3>Métriques clés</h3>
+                        <div class="metrics-grid">
+                            <div class="metric">
+                                <span class="metric-value">18</span>
+                                <span class="metric-label">Projets livrés</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">74</span>
+                                <span class="metric-label">Score NPS</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">420k€</span>
+                                <span class="metric-label">Pipeline signé</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">9</span>
+                                <span class="metric-label">Clients LOI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Marché -->
+        <section id="marche" class="section">
+            <div class="container">
+                <h2>Marché & Opportunité</h2>
+                <div class="market-overview">
+                    <div class="market-cards">
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Gaming France</h3>
+                                <p class="market-value">5,7 Md€</p>
+                                <p>Marché en forte croissance avec des studios recherchant des contenus vidéo premium</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Vidéo Corporate</h3>
+                                <p class="market-value">3,1 Md€</p>
+                                <p>Demande croissante pour des contenus vidéo marketing et formation</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Marché Addressable</h3>
+                                <p class="market-value">21,5 M€</p>
+                                <p>Notre segment spécifique avec objectif de 3,49% de part de marché</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Proposition de Valeur -->
+        <section id="proposition" class="section">
+            <div class="container">
+                <h2>Proposition de Valeur</h2>
+                <div class="value-props">
+                    <div class="value-card">
+                        <h3>🎥 + 💻 Combinaison Unique</h3>
+                        <p>Seule agence combinant production vidéo professionnelle et solutions nocode</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>⚡ Pipeline Optimisé</h3>
+                        <p>Réduction des cycles de production de 25% grâce à nos processus propriétaires</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>💰 Prix Intermédiaire</h3>
+                        <p>Positionnement 8-50k€/projet, entre freelances et grosses agences</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>📊 Offre Packagée</h3>
+                        <p>Vidéo + portail client + reporting KPI en solution complète</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Modèle Économique -->
+        <section id="modele" class="section">
+            <div class="container">
+                <h2>Modèle Économique</h2>
+                <div class="business-model">
+                    <div class="revenue-streams">
+                        <div class="stream-card">
+                            <h3>Gaming (40%)</h3>
+                            <p class="ticket-size">Ticket moyen: 22k€</p>
+                            <p>15 projets/an</p>
+                            <div class="stream-bar">
+                                <div class="stream-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="stream-card">
+                            <h3>Corporate (50%)</h3>
+                            <p class="ticket-size">Ticket moyen: 7k€</p>
+                            <p>25 projets/an</p>
+                            <div class="stream-bar">
+                                <div class="stream-fill" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="stream-card">
+                            <h3>Nocode (10%)</h3>
+                            <p class="ticket-size">Ticket moyen: 5k€</p>
+                            <p>15 projets/an</p>
+                            <div class="stream-bar">
+                                <div class="stream-fill" style="width: 10%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projections Financières -->
+        <section id="projections" class="section">
+            <div class="container">
+                <h2>Projections Financières</h2>
+                <div class="financials">
+                    <div class="chart-container">
+                        <canvas id="revenueChart" height="300"></canvas>
+                    </div>
+                    <div class="financial-metrics">
+                        <div class="metric-card">
+                            <h3>Croissance CA</h3>
+                            <p class="metric-big">+369%</p>
+                            <p>2024-2027</p>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Marge EBITDA 2027</h3>
+                            <p class="metric-big">25%</p>
+                            <p>190k€ EBITDA</p>
+                        </div>
+                        <div class="metric-card">
+                            <h3>Équipe 2027</h3>
+                            <p class="metric-big">18</p>
+                            <p>collaborateurs</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Calculateur ROI -->
+                    <div class="roi-calculator">
+                        <h3>Calculateur ROI Investisseur</h3>
+                        <div class="calculator-inputs">
+                            <label>Montant investissement (€):</label>
+                            <input type="number" id="investmentAmount" value="100000" class="form-control">
+                            <button class="btn btn--secondary" onclick="calculateROI()">Calculer ROI</button>
+                        </div>
+                        <div id="roiResult" class="roi-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Équipe -->
+        <section id="equipe" class="section">
+            <div class="container">
+                <h2>Équipe Fondatrice</h2>
+                <div class="team-overview">
+                    <div class="team-stats">
+                        <div class="team-stat">
+                            <h3>5</h3>
+                            <p>Co-fondateurs</p>
+                        </div>
+                        <div class="team-stat">
+                            <h3>10+</h3>
+                            <p>Ans d'expérience moyenne</p>
+                        </div>
+                    </div>
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <h4>Nocode & WebApps</h4>
+                            <p>Développement rapide d'applications</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h4>Bases de données Airtable</h4>
+                            <p>Gestion et organisation de données</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h4>Organisation Notion</h4>
+                            <p>Systèmes et processus optimisés</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h4>Production vidéo</h4>
+                            <p>Expertise technique et créative</p>
+                        </div>
+                        <div class="expertise-card">
+                            <h4>Communication</h4>
+                            <p>Stratégie et relations client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Financement -->
+        <section id="financement" class="section">
+            <div class="container">
+                <h2>Financement Demandé</h2>
+                <div class="funding-overview">
+                    <div class="funding-summary">
+                        <div class="funding-card">
+                            <h3>455k€</h3>
+                            <p>Financement demandé</p>
+                        </div>
+                        <div class="funding-card">
+                            <h3>500k€</h3>
+                            <p>Valorisation pré-money</p>
+                        </div>
+                        <div class="funding-card">
+                            <h3>47.6%</h3>
+                            <p>Dilution proposée</p>
+                        </div>
+                    </div>
+                    <div class="funding-breakdown">
+                        <h3>Répartition des fonds</h3>
+                        <div class="chart-container">
+                            <canvas id="fundingChart" height="300"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Stratégie de Sortie -->
+        <section id="sortie" class="section">
+            <div class="container">
+                <h2>Stratégie de Sortie</h2>
+                <div class="exit-strategy">
+                    <div class="exit-timeline">
+                        <h3>Horizon 5-7 ans</h3>
+                        <p>Objectif de sortie avec multiple 6-8x EBITDA</p>
+                    </div>
+                    <div class="potential-buyers">
+                        <h3>Acquéreurs potentiels</h3>
+                        <div class="buyers-grid">
+                            <div class="buyer-card">
+                                <h4>Ubisoft</h4>
+                                <p>Leader français du gaming</p>
+                            </div>
+                            <div class="buyer-card">
+                                <h4>Focus Entertainment</h4>
+                                <p>Éditeur et distributeur</p>
+                            </div>
+                            <div class="buyer-card">
+                                <h4>Publicis Gaming</h4>
+                                <p>Division gaming du groupe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Prenons Rendez-vous</h2>
+                <div class="contact-section">
+                    <div class="contact-info">
+                        <h3>CINEMX - GIE</h3>
+                        <p>Production vidéo nouvelle génération</p>
+                        <div class="contact-actions">
+                            <button class="btn btn--primary btn--lg">
+                                📧 Prendre rendez-vous
+                            </button>
+                            <button class="btn btn--outline btn--lg" onclick="downloadPDF()">
+                                📄 Télécharger le dossier PDF
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contact-summary">
+                        <h3>Récapitulatif de l'opportunité</h3>
+                        <ul>
+                            <li>✅ Marché en croissance (Gaming + Corporate)</li>
+                            <li>✅ Proposition de valeur unique (Vidéo + Nocode)</li>
+                            <li>✅ Équipe expérimentée (5 fondateurs)</li>
+                            <li>✅ Traction démontrée (420k€ pipeline)</li>
+                            <li>✅ Potentiel de croissance x4.7 en 3 ans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
